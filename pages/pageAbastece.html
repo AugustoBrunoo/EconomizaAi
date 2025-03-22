@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo-claro.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/estruturabasica.css">
+    <link rel="stylesheet" href="../styles/styleAbastece.css">
+    <title>EconomizaAi</title>
+</head>
+<body>
+    <header class="cabecalho__container">
+        <div class="cabecalho__logo__container">
+            <a class="cabecalho__logo__container--logo" href="../index.html">
+                <img src="../img/logo-verde.png" alt="Logo da EconomizaAi">
+                <h1>Economiza<span class="titulo_destaque">Ai</span></h1>
+            </a>
+        </div>
+    </header>
+    <main class="container__mainAbastecimento">
+        <div class="textosPrincipais__abastecimento">
+            <h1>Abasteça de forma inteligente!</h1>
+            <p>
+                Quer saber se vale mais a pena abastecer com etanol ou gasolina?<br> 
+                O EconomizaAi faz esse cálculo por você!
+            </p>
+        </div>
+        <div class="textosSecundarios__abastecimento">
+            <div class="blocoTextoSecundario__abastecimento">
+                <h1>Como funciona o cálculo?</h1>
+                <p class="textoInicialLista">Basta dividir o preço do litro do etanol pelo preço do litro da gasolina:</p>
+                <ul class="calculoTexto">
+                    <li><p>• Se o resultado for <span class="destaque">menor que 0,7</span>, o etanol é a melhor escolha.</p></li>
+                    <li><p>• Se for <span class="destaque">maior que 0,7</span>, a gasolina é mais vantajosa.</p></li>
+                </ul>
+            </div>
+            <div class="blocoTextoSecundario__abastecimento">
+                <h1>Por que isso é importante?</h1>
+                <p class="textoFinalSecundario">Os motores flex consomem, em média, 30% mais etanol do que gasolina para rodar a mesma distância. Por isso, o cálculo ajuda você a evitar gastos desnecessários e abastecer com economia!</p>
+                <p><span class="destaqueBlocoSecundario">Insira os preços e descubra a melhor opção agora!</span></p>
+            </div>
+        </div>
+
+        <form class="formulario__container">
+            <div class="formulario__container--bloco">
+                <p>Preço do <span class="destaqueFormulario">ETANOL:</span></p>
+                <input type="number" class="inValorInput" name="inValorEtanol" id="inValorEtanol" step="0.01" min="1" required>
+            </div>
+            <div class="formulario__container--bloco">
+                <p>Preço da <span class="destaqueFormulario">GASOLINA:</span> </p>
+                <input type="number" class="inValorInput" name="inValorGasolina" id="inValorGasolina" step="0.01" min="1" required>
+            </div>
+            <div class="formulario__container--botoes">
+                <input type="submit" class="btnCalcular" id="btnCalcular" value="Calcular">
+                <input type="button" class="btnLimparCampos" value="Limpar">
+            </div>
+        </form>
+        <h2 class="textoRespostaFormularioResultado"></h2>
+        <h2 class="textoRespostaFormularioCombustivel"></h2>
+    </main>
+
+    <footer class="rodape__container">
+        <div class="logorodape__container">
+            <img src="../img/logo-claro.png" alt="Logo da EconomizaAi">
+            <h1>Economiza<span class="titulo_destaque_rodape">Ai</span> <span class="span__version">v1.0</span></h1>
+        </div>
+        <div class="textosRodape">
+            <p class="direitos_reservados"></p>
+        </div>
+        <div class="redessociaisRodape">
+            <p> Siga o desenvolvedor nas redes sociais:</p>
+            <nav class="links__rodape">
+                <a href="https://github.com/AugustoBrunoo"><img src="../img/githubLogo.png" alt="GitHub"></a> 
+                <a href="https://www.instagram.com/augusto.bm_/"><img src="../img/Instagram_icon.png" alt="Instagram"></a> 
+                <a href="https://www.linkedin.com/in/augustobrunoo/"><img src="../img/LinkedIn_logo.png" alt="Facebook"></a> 
+            </nav>
+        </div>
+    </footer>
+    <script src="../scripts/scriptPageAbastece.js"></script>
+    <script src="../scripts/scriptDate.js"></script>
+</body>
+</html>

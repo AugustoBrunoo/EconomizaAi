@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.cabecalho__container {
+    /* margin-top: 30px; */
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid #859F3D;
+    align-items: center;
+}
+
+.cabecalho__logo__container--logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cabecalho__logo__container--logo img {
+    width: 75px;
+}
+
+.cabecalho__logo__container--logo h1 {
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #F6FCDF;
+}
+
+.titulo_destaque {
+    color: #859F3D;
+}
+
+.link {
+    font-family: "Montserrat", serif;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: #F6FCDF;
+}
+
+.link:hover {
+    color: #859F3D;
+    transition: 0.5s;
+}
+
+body {
+    background-color: #1A1A19;
+}
+
+
+/* Rodape */
+
+.rodape__container {
+    /* margin-top: 17%; */
+    width: 100%;
+    height: 60px;
+    background-color: #859F3D;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+}
+
+.logorodape__container {
+    display: flex;
+    align-items: center;
+}
+
+.logorodape__container img {
+    width: 70px;
+}
+
+.logorodape__container h1 {
+    font-size: 25px;
+}
+
+.titulo_destaque_rodape {
+    color: #31511E;
+}
+
+.span__version {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.redessociaisRodape {
+    display: flex;
+    flex-direction: column;
+    margin-right: 90px;
+    gap: 20px;
+}
+
+.redessociaisRodape p {
+    font-size: 15px;
+}
+
+.redessociaisRodape img {
+    width: 30px;
+}
+
+.links__rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+@media(max-width: 2560px) {
+    .rodape__container {
+        height: 90px;
+    }
+
+    .logorodape__container img {
+        width: 70px;
+    }
+
+    .logorodape__container h1 {
+        font-size: 35px;
+    }
+
+    .span__version {
+        font-size: 25px;
+        font-style: italic;
+    }
+
+    .redessociaisRodape p {
+        font-size: 25px;
+    }
+
+    .redessociaisRodape img {
+        width: 50px;
+    }
+
+    .textosRodape p {
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 1920px) {
+    .rodape__container {
+        height: 90px;
+    }
+
+    .logorodape__container img {
+        width: 70px;
+    }
+
+    .logorodape__container h1 {
+        font-size: 25px;
+    }
+
+    .span__version {
+        font-size: 15px;
+        font-style: italic;
+    }
+
+    .redessociaisRodape p {
+        font-size: 15px;
+    }
+
+    .redessociaisRodape img {
+        width: 40px;
+    }
+
+    .textosRodape p {
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 1440px) {
+    .rodape__container {
+        height: 100px;
+    }
+
+    .logorodape__container img {
+        width: 50px;
+    }
+
+    .logorodape__container h1 {
+        font-size: 20px;
+    }
+
+    .span__version {
+        font-size: 15px;
+        font-style: italic;
+    }
+
+    .redessociaisRodape p {
+        font-size: 20px;
+    }
+
+    .redessociaisRodape img {
+        width: 30px;
+    }
+
+    .textosRodape p {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .rodape__container {
+        height: 100px;
+    }
+
+    .logorodape__container img {
+        width: 50px;
+    }
+
+    .logorodape__container h1 {
+        font-size: 20px;
+    }
+
+    .span__version {
+        font-size: 15px;
+        font-style: italic;
+    }
+
+    .redessociaisRodape p {
+        font-size: 17px;
+    }
+
+    .redessociaisRodape img {
+        width: 35px;
+    }
+
+    .textosRodape p {
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 768px) {
+    .rodape__container {
+        height: 100px;
+    }
+
+    .logorodape__container img {
+        width: 50px;
+    }
+
+    .logorodape__container h1 {
+        font-size: 15px;
+    }
+
+    .span__version {
+        font-size: 10px;
+        font-style: italic;
+    }
+
+    .redessociaisRodape p {
+        font-size: 13px;
+    }
+
+    .redessociaisRodape img {
+        width: 27px;
+    }
+
+    .textosRodape p {
+        font-size: 13px;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .dpmv {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media(max-width: 425px) {
+    .cabecalho__container {
+        width: 100%;
+    }
+    .cabecalho__logo__container--logo img {
+        width: 30px;
+    }
+
+
+    .container__main {
+        padding: 0px 10px;
+        align-items: center;
+    }
+
+    .container__main--texto {
+        width: fit-content;
+        align-items: center;
+    }
+
+    .container__main--textoEstilizado {
+        text-align: center;
+        width: fit-content;
+    }
+
+    .dpmv {
+        width: fit-content;
+        margin-left: 30px;
+    }
+
+    .textoWebApps {
+        margin-left: 20px;
+    }
+
+    .cardsApps img{
+        width: 30px;
+    }
+
+    .textoCard h3{
+        font-size: 13px;
+    }
+
+    .textoCard p{
+        font-size: 10px;
+    }
+
+    .textoDestaque{
+        /* width: 650px; */
+        font-size: 9px;
+        text-align: center;
+        margin-left: 12px;
+    }
+
+    .textoDestaque p{
+        text-align: center;
+    }
+
+    .rodape__container {
+        justify-content: space-around;
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .logorodape__container img {
+        width: 30px;
+    }
+
+    .textosRodape p {
+        width: max-content;
+        font-size: 10px;
+    }
+
+    .redessociaisRodape {
+        margin-right: 0;
+        padding-right: 10px;
+
+    }
+
+    .redessociaisRodape p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .redessociaisRodape img {
+        width: 20px;
+    }
+
+    .links__rodape {
+        gap: 10px;
+    }
+
+}
+
+@media(max-width: 320px) {
+
+    .textosPrincipais__abastecimento {
+        width: fit-content;
+        text-align: center;
+    }
+    
+    .logorodape__container h1{
+        font-size: 10px;
+    }
+
+    .textosRodape p{
+        font-size: 8px;
+    }
+
+    
+
+    .redessociaisRodape p{
+        font-size: 9px;
+    }
+}

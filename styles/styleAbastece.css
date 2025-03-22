@@ -1,0 +1,187 @@
+.container__mainAbastecimento {
+    display: flex;
+    flex-direction: column;
+}
+
+.textosPrincipais__abastecimento {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.textosPrincipais__abastecimento h1 {
+    color: #F6FCDF;
+}
+
+.textosSecundarios__abastecimento {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+.blocoTextoSecundario__abastecimento {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background-color: #F6FCDF;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.blocoTextoSecundario__abastecimento h1 {
+    margin-bottom: 10px;
+}
+
+.blocoTextoSecundario__abastecimento p, h1 {
+    color: #1A1A19;
+}
+
+.textoFinalSecundario {
+    margin-bottom: 10px;
+}
+
+.textoInicialLista {
+    margin-bottom: 10px;
+}
+
+.destaque {
+    color: #1A1A19;
+    font-weight: 700;
+}
+
+.calculoTexto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.destaqueBlocoSecundario {
+    color: #1A1A19;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.formulario__container {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destaqueFormulario {
+    font-weight: 700;
+    color: #859F3D;
+    font-style: italic;
+}
+
+.formulario__container--bloco {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inValorInput {
+    background-color: #F6FCDF;
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.formulario__container--botoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btnCalcular, .btnLimparCampos {
+    width: 90px;
+    height: 50px;
+    border: 2px solid #859F3D;
+    border-radius: 10px;
+    background-color: #F6FCDF;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.btnLimparCampos {
+    border: 1px solid rgb(229, 55, 55);
+}
+
+.btnCalcular:hover {
+    color: #859F3D;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.btnLimparCampos:hover {
+    color: rgb(229, 55, 55);
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.textoRespostaFormularioResultado {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+    
+}
+
+.textoRespostaFormularioCombustivel {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 13%;
+    font-size: 20px;
+}
+
+@media (max-width: 724px) {
+    .textosPrincipais__abastecimento h1{
+        font-size: 15px;
+    }
+
+    .textosPrincipais__abastecimento p{
+        font-size: 11px;
+    }
+
+    .textosSecundarios__abastecimento {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-self: center;
+    }
+
+    .textoRespostaFormularioResultado {
+        font-size: 20px;
+    }
+
+    .textoRespostaFormularioCombustivel {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 390px) {
+    .textosPrincipais__abastecimento p{
+        font-size: 10px;
+    }
+
+
+    .textosSecundarios__abastecimento {
+        align-items: center;
+    }
+
+    .blocoTextoSecundario__abastecimento {
+        width: 70%;
+    }
+}
+
+@media (max-width: 390px) {
+    .textoRespostaFormularioCombustivel {
+        font-size: 10px;
+    }
+}
